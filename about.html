@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hopeful</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1><span class="blue-text">Blue</span> Developer Directory</h1>
+            <h2>Find A Developer <span class="white-text">NOW</span></h2>
+        </header><!--header end-->
+
+        <nav id="menu">
+            <ul>
+                <li class="menuitem"><a href="index.html">Home</a></li>
+                <li class="menuitem"><a href="about.html">About Us</a></li>
+                <li class="menuitem"><a href="browse.html">Browse Developers</a></li>
+                <li class="menuitem"><a href="compliment.html">Compliment Us</a></li>
+            </ul>
+        </nav><!--menu end-->
+
+        <nav id="leftmenu">
+            <h3>Links</h3>
+                <ul>
+                    <li><a href="browse.html">SEO</a></li>
+                    <li><a href="browse.html">PHP</a></li>
+                    <li><a href="browse.html">Ajax</a></li>
+                    <li><a href="browse.html">jQuery</a></li>
+                    <li><a href="browse.html">Web design</a></li>
+                    <li><a href="browse.html">Web Programming</a></li>
+                    <li><a href="browse.html">Content Creation</a></li>
+                    <li><a href="browse.html">Internet Marketing</a></li>
+                    <li><a href="browse.html">XHTML Templates</a></li>
+                </ul>
+        </nav><!--leftmenu end-->
+
+        <div>
+        <div id="aboutContent">
+            <section>
+                <script type="text/javascript">
+                function updateTextInput(val){
+                    document.getElementById('textInput').value=val;
+                }
+                </script> 
+                <label for="budget">Donation:</label>
+                <input id="budget" type="range" name="range" min="500" max="10000" onchange="updateTextInput(this.value)">
+                <input id="textInput" type="text" placeholder="5000" required>
+            </section>
+            <section>
+                <label for="website">Current Website</label>
+                <input type="url" name="website" placeholder="Website" required>
+            </section>       
+            <section>
+                <label for="start">Start Date</label>
+                <input type="date" name="date">
+            </section>
+            <section>
+                <label for="pages">Number of Pages</label>
+                <input type="number" name="pages">
+            </section>
+            <section>
+                <label for="color">Choose Color</label>
+                <input type="color" name="color">
+            </section>
+            
+        </div>
+        <section>
+            <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                <i class="material-icons right">send</i>
+              </button>
+        </section>
+        </div> 
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+    </body>
+</html>

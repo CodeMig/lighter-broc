@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hopeful</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1><span class="blue-text">Blue</span> Developer Directory</h1>
+            <h2>Find A Developer <span class="white-text">NOW</span></h2>
+        </header><!--header end-->
+        
+        <nav id="menu">
+            <ul>
+                <li class="menuitem"><a href="index.html">Home</a></li>
+                <li class="menuitem"><a href="about.html">About Us</a></li>
+                <li class="menuitem"><a href="browse.html">Browse Developers</a></li>
+                <li class="menuitem"><a href="compliment.html">Compliment Us</a></li>
+            </ul>
+        </nav><!--menu end-->
+        
+        <nav id="leftmenu">
+            <h3>Links</h3>
+                <ul>
+                    <li><a href="browse.html">SEO</a></li>
+                    <li><a href="browse.html">PHP</a></li>
+                    <li><a href="browse.html">Ajax</a></li>
+                    <li><a href="browse.html">jQuery</a></li>
+                    <li><a href="browse.html">Web design</a></li>
+                    <li><a href="browse.html">Web Programming</a></li>
+                    <li><a href="browse.html">Content Creation</a></li>
+                    <li><a href="browse.html">Internet Marketing</a></li>
+                    <li><a href="browse.html">XHTML Templates</a></li>
+                </ul>
+        </nav><!--leftmenu end-->
+            </div><!--container end-->
+
+            <section>
+            <div id="complimentContent">
+                <div style="width:750px;padding-left:10px;"><!--main div start-->
+                    <h3>Compliment Us</h3>
+                    <p>Please use this form to compliment a member of our website team</p>
+                    <form action="process.php" method="POST">
+                        <p>
+                        <label for="name">Full Name:</label>
+                        <input type="text" name="name">
+                        </p>
+                        <p>
+                        <label for="email">Email Address:</label>
+                        <input type="text" name="email">
+                        </p>
+                        <p>
+                        <label for="Phone">Phone Number:</label>
+                        <input type="text" name="Phone">
+                        </p>
+                        <p>
+                        <label for="call">Best Time To Compliment</label>
+                        <input type="radio" name="call" value="morning">Morning
+                        <input type="radio" name="call" value="morning">Afternoon
+                        <input type="radio" name="call" value="morning">Evening
+                        </p>
+                        <p>
+                            <label for="compliments"></label>
+                            <select type="list" name="compliment">
+                            <option>--Select One--</option>
+                                <option value="teamwork">Has great teamwork</option>
+                                <option value="eyes">Has lovely Eyes</option>
+                                <option value="commuicate">Super good communicator</option>
+                                <option value="strategies">Has superior strategies</option>
+                                <option value="not sure"></option>
+                            </select>
+                        </p>
+                        <p>
+                            <label for="services">Services Used: (Check all that apply) </label>
+                            <table>
+                                <tr>
+                                    <td><input type="checkbox" name="services" value="html">html</td>
+                                    <td><input type="checkbox" name="services" value="php">PHP</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="services" value="asp">ASP</td>
+                                    <td><input type="checkbox" name="services" value="java">Java</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="services" value="c">C++</td>
+                                    <td><input type="checkbox" name="services" value="design">Design</td>
+                                </tr>
+                            </table>
+                        </p>
+                        <p id="submit">
+                            <input type="submit" name="submit" value="Submit Compliment">
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
